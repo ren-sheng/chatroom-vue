@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseURL = 'http://100.67.32.81:8080';
+const baseURL = 'http://100.65.184.237:8080';
 const instance = axios.create({ baseURL });
 
 //定义拦截响应器

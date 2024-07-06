@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      ws: "ws://100.67.32.81:8080/ws/message",
+      ws: "ws://100.65.184.237:8080/ws/message",
       token: this.$store.state.JWT,
     };
   },
@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     connectWebSocket() {
-      const wsUrl = `ws://100.67.32.81:8080/ws/message?token=${encodeURIComponent(this.token)}`;
+      const wsUrl = `ws://100.65.184.237:8080/ws/message?token=${encodeURIComponent(this.token)}`;
       console.log('Connecting to WebSocket:', wsUrl);
       this.ws = new WebSocket(wsUrl);
 
